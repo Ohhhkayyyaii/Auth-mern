@@ -8,9 +8,13 @@ A simple and complete MERN authentication system with Email Verification and Pas
 ---
 
 ## 🌐 Live Demo  
-**👉** [Click here to view the live website]()
+**👉** [Click here to view the live website](https://auth-mern-client-p807.onrender.com)
+
 
 ---
+
+
+
 
 ## 📌 What This Project Does
 
