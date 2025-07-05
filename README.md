@@ -1,87 +1,114 @@
-<div align="center">
+# 🔐 MERN Auth System
 
-# 🔐 AUTH MERN 🔐  
-A simple and complete MERN authentication system with Email Verification and Password Reset using 6-digit OTP.
+A complete authentication system I built using MERN stack with email verification and password reset functionality.
 
-</div>
+## ✨ What it does
 
----
+- User registration and login with JWT
+- Email verification using 6-digit OTP
+- Password reset via email
+- Modern dark theme UI
+- Responsive design
 
-## 🌐 Live Demo  
-**👉** [Click here to view the live website](https://auth-mern-client-p807.onrender.com)
+## 🛠️ Built with
 
+**Frontend:** React, Tailwind CSS, Axios  
+**Backend:** Node.js, Express, MongoDB, JWT, Nodemailer  
+**Deployment:** Render  
+**Email Service:** Brevo (for OTP)  
+**Database:** MongoDB Atlas
 
----
+## 🚀 Live Demo
 
+**👉 [Try it live here!](https://auth-mern-client-p807.onrender.com)**
 
+- **Website:** [https://auth-mern-client-p807.onrender.com](https://auth-mern-client-p807.onrender.com)
+- **API:** [https://auth-mern-server-p807.onrender.com](https://auth-mern-server-p807.onrender.com)
 
+## 💻 Run locally
 
-## 📌 What This Project Does
+### Prerequisites
+- Node.js
+- MongoDB (local or Atlas)
+- Gmail account
 
-This is a beginner-friendly authentication system using the MERN stack.
+### Setup
 
-### ✨ Key Features
-- ✅ Email Verification via 6-digit OTP  
-- 🔁 Password Reset using OTP  
-- 🔒 JWT-based secure login  
-- 📬 Sends OTP directly to the user’s email  
-
----
-
-## 💻 Tech Stack
-
-**Frontend:**  
-- React  
-- Tailwind CSS  
-
-**Backend:**  
-- Node.js  
-- Express.js  
-- MongoDB  
-- JWT (JsonWebToken)  
-- Nodemailer (for sending emails)  
-
----
-
-## 🚀 Getting Started (Run It Locally)
-
-> Follow the steps below to run the project on your machine.
-
-### 🔧 Prerequisites  
-- Node.js installed  
-- MongoDB account or local setup  
-- SMTP-enabled email (e.g. Gmail, Brevo)
-
-### 🛠 Installation
-
+1. **Clone and install**
 ```bash
-# Clone the repository
-git clone https://github.com/Ohhhkayyyaii/Auth-mern.git
+git clone https://github.com/yourusername/auth-mern.git
+cd auth-mern
+```
 
-# Go to backend
-cd Auth-mern/server
-
-# Install backend dependencies
+2. **Backend setup**
+```bash
+cd server
 npm install
+```
 
-# Add environment variables
-# Create a .env file and paste the following:
-PORT=4000  
-MONGO_URI=your_mongodb_uri  
-JWT_SECRET=your_jwt_secret  
-SMTP_EMAIL=your_email_address  
-SMTP_PASSWORD=your_email_password  
+Create `.env` file:
+```env
+PORT=4000
+MONGODB_URI=your_mongodb_uri
+JWT_SECRET=your_secret_key
+SENDER_EMAIL=your_email@gmail.com
+SENDER_PASSWORD=your_gmail_app_password
+```
 
-# Start backend
-npm run server
-# It will run at http://localhost:4000
-
-# Open new terminal for frontend
+3. **Frontend setup**
+```bash
 cd ../client
-
-# Install frontend dependencies
 npm install
+```
 
-# Start frontend
-npm run dev
-# It will run at http://localhost:5173
+Create `.env` file:
+```env
+VITE_BACKEND_URL=http://localhost:4000
+```
+
+4. **Run the app**
+```bash
+# Terminal 1 - Backend
+cd server && npm run server
+
+# Terminal 2 - Frontend  
+cd client && npm run dev
+```
+
+Visit `http://localhost:5173` to see it running!
+
+## 📧 Email setup
+
+I used Brevo for sending OTP emails. You can use Gmail or any SMTP service:
+
+1. Enable 2FA on your Gmail
+2. Generate App Password (Google Account → Security → App passwords)
+3. Use that password in `SENDER_PASSWORD`
+
+## 🎯 Key features
+
+- **Secure authentication** with JWT tokens
+- **Email verification** with OTP
+- **Password reset** functionality  
+- **Modern UI** with dark theme
+- **Responsive design** for all devices
+- **Real-time validation** and notifications
+
+## 📁 Project structure
+
+```
+auth-mern/
+├── client/          # React frontend
+├── server/          # Node.js backend
+└── README.md
+```
+
+## 🤝 Contributing
+
+Feel free to fork and submit PRs! I'm always open to improvements.
+
+---
+
+⭐ **Star if you found this helpful!**
+
+*Built with ❤️ using MERN stack*
